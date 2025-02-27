@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mans Projekts</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="src/img/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#">Sākums</a>
+            <a href="#">Par mums</a>
+            <a href="#">Pakalpojumi</a>
+            <a href="#">Kontakti</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Laipni lūgti manā projektā!</h1>
+        <p>Šī ir mājaslapa ar JavaScript integrāciju.</p>
+    </section>
+
+    <section class="random-number-section">
+        <img src="src/img/random.png" alt="Nejaušs skaitlis" class="random-image">
+        <h2>Nejauša skaitļa ģenerators</h2>
+        <p id="random-number">Spied pogu, lai iegūtu skaitli!</p>
+        <button onclick="generateRandomNumber()">Ģenerēt</button>
+    </section>
+
+    <section class="clicker-section">
+        <img src="src/img/clicker.png" alt="Klikšķu skaitītājs" class="clicker-image">
+        <h2>Klikšķu skaitītājs</h2>
+        <p>Klikšķu skaits: <span id="click-count">0</span></p>
+        <button onclick="incrementClick()">Klikšķini mani!</button>
+    </section>
+
+    <section class="fact-section">
+            <img src="src/img/cat-fact.png" alt="Kaķu fakts" class="fact-image">
+            <h2>Kaķu Fakti</h2>
+            <p id="fact">Spied pogu, lai iegūtu jaunu faktu!</p>
+            <button id="new-fact">Saņemt faktu</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mans Projekts. Visas tiesības aizsargātas.</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
